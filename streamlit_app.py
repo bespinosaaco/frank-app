@@ -34,12 +34,12 @@ if uploaded_file is not None:
 
         # Create a DataFrame for plotting
         plot_df = pd.DataFrame({
-            "Intensity": column_0,
-            "Wavenumber": column_1
+            "Wavenumber": column_0,
+            "Intensity": column_1
         })
 
         # Generate line chart using Plotly
-        fig = px.line(plot_df, x="Intensity", y="Wavenumber", title="Line Chart")
+        fig = px.line(plot_df, x="Wavenumber", y="Intensity", title="Line Chart")
         fig.update_xaxes(range=[4000, 400])
         # Display the Plotly figure in Streamlit
         with col3:
