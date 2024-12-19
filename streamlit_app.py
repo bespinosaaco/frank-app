@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="Line Plot Viewer", layout="wide")
+st.set_page_config(page_title="Frank App", layout="wide",page_icon="🦉")
 
 st.title("Hey! Francis 🦉")
 st.caption('Mira que cool!!')
