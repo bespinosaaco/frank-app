@@ -39,7 +39,7 @@ if uploaded_file is not None:
         })
 
         # Generate line chart using Plotly
-        fig = px.line(plot_df, x="Intensity", y="Wavenumber", title="Line Chart of Column 0 and 1")
+        fig = px.line(plot_df, x="Intensity", y="Wavenumber", title="Line Chart")
         fig.update_xaxes(range=[4000, 400])
         # Display the Plotly figure in Streamlit
         with col3:
